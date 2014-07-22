@@ -1,0 +1,515 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALOGE	gles3jni.h	/^#define ALOGE(/;"	d
+ALOGV	gles3jni.h	/^#define ALOGV(/;"	d
+COLOR_ATTRIB	RendererES3.cpp	/^#define COLOR_ATTRIB /;"	d	file:
+DEBUG	gles3jni.h	/^#define DEBUG /;"	d
+FIND_PROC	gl3stub.c	/^    #define FIND_PROC(/;"	d	file:
+FIND_PROC	gl3stub.c	/^    #undef FIND_PROC$/;"	d	file:
+FRAGMENT_SHADER	RendererES2.cpp	/^static const char FRAGMENT_SHADER[] =$/;"	v	file:
+FRAGMENT_SHADER	RendererES3.cpp	/^static const char FRAGMENT_SHADER[] =$/;"	v	file:
+GLES3JNI_H	gles3jni.h	/^#define GLES3JNI_H /;"	d
+GL_ACTIVE_UNIFORM_BLOCKS	gl3stub.h	/^#define GL_ACTIVE_UNIFORM_BLOCKS /;"	d
+GL_ACTIVE_UNIFORM_BLOCK_MAX_NAME_LENGTH	gl3stub.h	/^#define GL_ACTIVE_UNIFORM_BLOCK_MAX_NAME_LENGTH /;"	d
+GL_ALREADY_SIGNALED	gl3stub.h	/^#define GL_ALREADY_SIGNALED /;"	d
+GL_ANY_SAMPLES_PASSED	gl3stub.h	/^#define GL_ANY_SAMPLES_PASSED /;"	d
+GL_ANY_SAMPLES_PASSED_CONSERVATIVE	gl3stub.h	/^#define GL_ANY_SAMPLES_PASSED_CONSERVATIVE /;"	d
+GL_BLUE	gl3stub.h	/^#define GL_BLUE /;"	d
+GL_BUFFER_ACCESS_FLAGS	gl3stub.h	/^#define GL_BUFFER_ACCESS_FLAGS /;"	d
+GL_BUFFER_MAPPED	gl3stub.h	/^#define GL_BUFFER_MAPPED /;"	d
+GL_BUFFER_MAP_LENGTH	gl3stub.h	/^#define GL_BUFFER_MAP_LENGTH /;"	d
+GL_BUFFER_MAP_OFFSET	gl3stub.h	/^#define GL_BUFFER_MAP_OFFSET /;"	d
+GL_BUFFER_MAP_POINTER	gl3stub.h	/^#define GL_BUFFER_MAP_POINTER /;"	d
+GL_COLOR	gl3stub.h	/^#define GL_COLOR /;"	d
+GL_COLOR_ATTACHMENT1	gl3stub.h	/^#define GL_COLOR_ATTACHMENT1 /;"	d
+GL_COLOR_ATTACHMENT10	gl3stub.h	/^#define GL_COLOR_ATTACHMENT10 /;"	d
+GL_COLOR_ATTACHMENT11	gl3stub.h	/^#define GL_COLOR_ATTACHMENT11 /;"	d
+GL_COLOR_ATTACHMENT12	gl3stub.h	/^#define GL_COLOR_ATTACHMENT12 /;"	d
+GL_COLOR_ATTACHMENT13	gl3stub.h	/^#define GL_COLOR_ATTACHMENT13 /;"	d
+GL_COLOR_ATTACHMENT14	gl3stub.h	/^#define GL_COLOR_ATTACHMENT14 /;"	d
+GL_COLOR_ATTACHMENT15	gl3stub.h	/^#define GL_COLOR_ATTACHMENT15 /;"	d
+GL_COLOR_ATTACHMENT2	gl3stub.h	/^#define GL_COLOR_ATTACHMENT2 /;"	d
+GL_COLOR_ATTACHMENT3	gl3stub.h	/^#define GL_COLOR_ATTACHMENT3 /;"	d
+GL_COLOR_ATTACHMENT4	gl3stub.h	/^#define GL_COLOR_ATTACHMENT4 /;"	d
+GL_COLOR_ATTACHMENT5	gl3stub.h	/^#define GL_COLOR_ATTACHMENT5 /;"	d
+GL_COLOR_ATTACHMENT6	gl3stub.h	/^#define GL_COLOR_ATTACHMENT6 /;"	d
+GL_COLOR_ATTACHMENT7	gl3stub.h	/^#define GL_COLOR_ATTACHMENT7 /;"	d
+GL_COLOR_ATTACHMENT8	gl3stub.h	/^#define GL_COLOR_ATTACHMENT8 /;"	d
+GL_COLOR_ATTACHMENT9	gl3stub.h	/^#define GL_COLOR_ATTACHMENT9 /;"	d
+GL_COMPARE_REF_TO_TEXTURE	gl3stub.h	/^#define GL_COMPARE_REF_TO_TEXTURE /;"	d
+GL_COMPRESSED_R11_EAC	gl3stub.h	/^#define GL_COMPRESSED_R11_EAC /;"	d
+GL_COMPRESSED_RG11_EAC	gl3stub.h	/^#define GL_COMPRESSED_RG11_EAC /;"	d
+GL_COMPRESSED_RGB8_ETC2	gl3stub.h	/^#define GL_COMPRESSED_RGB8_ETC2 /;"	d
+GL_COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2	gl3stub.h	/^#define GL_COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2 /;"	d
+GL_COMPRESSED_RGBA8_ETC2_EAC	gl3stub.h	/^#define GL_COMPRESSED_RGBA8_ETC2_EAC /;"	d
+GL_COMPRESSED_SIGNED_R11_EAC	gl3stub.h	/^#define GL_COMPRESSED_SIGNED_R11_EAC /;"	d
+GL_COMPRESSED_SIGNED_RG11_EAC	gl3stub.h	/^#define GL_COMPRESSED_SIGNED_RG11_EAC /;"	d
+GL_COMPRESSED_SRGB8_ALPHA8_ETC2_EAC	gl3stub.h	/^#define GL_COMPRESSED_SRGB8_ALPHA8_ETC2_EAC /;"	d
+GL_COMPRESSED_SRGB8_ETC2	gl3stub.h	/^#define GL_COMPRESSED_SRGB8_ETC2 /;"	d
+GL_COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2	gl3stub.h	/^#define GL_COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2 /;"	d
+GL_CONDITION_SATISFIED	gl3stub.h	/^#define GL_CONDITION_SATISFIED /;"	d
+GL_COPY_READ_BUFFER	gl3stub.h	/^#define GL_COPY_READ_BUFFER /;"	d
+GL_COPY_READ_BUFFER_BINDING	gl3stub.h	/^#define GL_COPY_READ_BUFFER_BINDING /;"	d
+GL_COPY_WRITE_BUFFER	gl3stub.h	/^#define GL_COPY_WRITE_BUFFER /;"	d
+GL_COPY_WRITE_BUFFER_BINDING	gl3stub.h	/^#define GL_COPY_WRITE_BUFFER_BINDING /;"	d
+GL_CURRENT_QUERY	gl3stub.h	/^#define GL_CURRENT_QUERY /;"	d
+GL_DEPTH	gl3stub.h	/^#define GL_DEPTH /;"	d
+GL_DEPTH24_STENCIL8	gl3stub.h	/^#define GL_DEPTH24_STENCIL8 /;"	d
+GL_DEPTH32F_STENCIL8	gl3stub.h	/^#define GL_DEPTH32F_STENCIL8 /;"	d
+GL_DEPTH_COMPONENT24	gl3stub.h	/^#define GL_DEPTH_COMPONENT24 /;"	d
+GL_DEPTH_COMPONENT32F	gl3stub.h	/^#define GL_DEPTH_COMPONENT32F /;"	d
+GL_DEPTH_STENCIL	gl3stub.h	/^#define GL_DEPTH_STENCIL /;"	d
+GL_DEPTH_STENCIL_ATTACHMENT	gl3stub.h	/^#define GL_DEPTH_STENCIL_ATTACHMENT /;"	d
+GL_DRAW_BUFFER0	gl3stub.h	/^#define GL_DRAW_BUFFER0 /;"	d
+GL_DRAW_BUFFER1	gl3stub.h	/^#define GL_DRAW_BUFFER1 /;"	d
+GL_DRAW_BUFFER10	gl3stub.h	/^#define GL_DRAW_BUFFER10 /;"	d
+GL_DRAW_BUFFER11	gl3stub.h	/^#define GL_DRAW_BUFFER11 /;"	d
+GL_DRAW_BUFFER12	gl3stub.h	/^#define GL_DRAW_BUFFER12 /;"	d
+GL_DRAW_BUFFER13	gl3stub.h	/^#define GL_DRAW_BUFFER13 /;"	d
+GL_DRAW_BUFFER14	gl3stub.h	/^#define GL_DRAW_BUFFER14 /;"	d
+GL_DRAW_BUFFER15	gl3stub.h	/^#define GL_DRAW_BUFFER15 /;"	d
+GL_DRAW_BUFFER2	gl3stub.h	/^#define GL_DRAW_BUFFER2 /;"	d
+GL_DRAW_BUFFER3	gl3stub.h	/^#define GL_DRAW_BUFFER3 /;"	d
+GL_DRAW_BUFFER4	gl3stub.h	/^#define GL_DRAW_BUFFER4 /;"	d
+GL_DRAW_BUFFER5	gl3stub.h	/^#define GL_DRAW_BUFFER5 /;"	d
+GL_DRAW_BUFFER6	gl3stub.h	/^#define GL_DRAW_BUFFER6 /;"	d
+GL_DRAW_BUFFER7	gl3stub.h	/^#define GL_DRAW_BUFFER7 /;"	d
+GL_DRAW_BUFFER8	gl3stub.h	/^#define GL_DRAW_BUFFER8 /;"	d
+GL_DRAW_BUFFER9	gl3stub.h	/^#define GL_DRAW_BUFFER9 /;"	d
+GL_DRAW_FRAMEBUFFER	gl3stub.h	/^#define GL_DRAW_FRAMEBUFFER /;"	d
+GL_DRAW_FRAMEBUFFER_BINDING	gl3stub.h	/^#define GL_DRAW_FRAMEBUFFER_BINDING /;"	d
+GL_DYNAMIC_COPY	gl3stub.h	/^#define GL_DYNAMIC_COPY /;"	d
+GL_DYNAMIC_READ	gl3stub.h	/^#define GL_DYNAMIC_READ /;"	d
+GL_ES_VERSION_3_0	gl3stub.h	/^#define GL_ES_VERSION_3_0 /;"	d
+GL_FLOAT_32_UNSIGNED_INT_24_8_REV	gl3stub.h	/^#define GL_FLOAT_32_UNSIGNED_INT_24_8_REV /;"	d
+GL_FLOAT_MAT2x3	gl3stub.h	/^#define GL_FLOAT_MAT2x3 /;"	d
+GL_FLOAT_MAT2x4	gl3stub.h	/^#define GL_FLOAT_MAT2x4 /;"	d
+GL_FLOAT_MAT3x2	gl3stub.h	/^#define GL_FLOAT_MAT3x2 /;"	d
+GL_FLOAT_MAT3x4	gl3stub.h	/^#define GL_FLOAT_MAT3x4 /;"	d
+GL_FLOAT_MAT4x2	gl3stub.h	/^#define GL_FLOAT_MAT4x2 /;"	d
+GL_FLOAT_MAT4x3	gl3stub.h	/^#define GL_FLOAT_MAT4x3 /;"	d
+GL_FRAGMENT_SHADER_DERIVATIVE_HINT	gl3stub.h	/^#define GL_FRAGMENT_SHADER_DERIVATIVE_HINT /;"	d
+GL_FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE	gl3stub.h	/^#define GL_FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE /;"	d
+GL_FRAMEBUFFER_ATTACHMENT_BLUE_SIZE	gl3stub.h	/^#define GL_FRAMEBUFFER_ATTACHMENT_BLUE_SIZE /;"	d
+GL_FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING	gl3stub.h	/^#define GL_FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING /;"	d
+GL_FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE	gl3stub.h	/^#define GL_FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE /;"	d
+GL_FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE	gl3stub.h	/^#define GL_FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE /;"	d
+GL_FRAMEBUFFER_ATTACHMENT_GREEN_SIZE	gl3stub.h	/^#define GL_FRAMEBUFFER_ATTACHMENT_GREEN_SIZE /;"	d
+GL_FRAMEBUFFER_ATTACHMENT_RED_SIZE	gl3stub.h	/^#define GL_FRAMEBUFFER_ATTACHMENT_RED_SIZE /;"	d
+GL_FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE	gl3stub.h	/^#define GL_FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE /;"	d
+GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER	gl3stub.h	/^#define GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER /;"	d
+GL_FRAMEBUFFER_DEFAULT	gl3stub.h	/^#define GL_FRAMEBUFFER_DEFAULT /;"	d
+GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE	gl3stub.h	/^#define GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE /;"	d
+GL_FRAMEBUFFER_UNDEFINED	gl3stub.h	/^#define GL_FRAMEBUFFER_UNDEFINED /;"	d
+GL_GREEN	gl3stub.h	/^#define GL_GREEN /;"	d
+GL_HALF_FLOAT	gl3stub.h	/^#define GL_HALF_FLOAT /;"	d
+GL_INTERLEAVED_ATTRIBS	gl3stub.h	/^#define GL_INTERLEAVED_ATTRIBS /;"	d
+GL_INT_2_10_10_10_REV	gl3stub.h	/^#define GL_INT_2_10_10_10_REV /;"	d
+GL_INT_SAMPLER_2D	gl3stub.h	/^#define GL_INT_SAMPLER_2D /;"	d
+GL_INT_SAMPLER_2D_ARRAY	gl3stub.h	/^#define GL_INT_SAMPLER_2D_ARRAY /;"	d
+GL_INT_SAMPLER_3D	gl3stub.h	/^#define GL_INT_SAMPLER_3D /;"	d
+GL_INT_SAMPLER_CUBE	gl3stub.h	/^#define GL_INT_SAMPLER_CUBE /;"	d
+GL_INVALID_INDEX	gl3stub.h	/^#define GL_INVALID_INDEX /;"	d
+GL_MAJOR_VERSION	gl3stub.h	/^#define GL_MAJOR_VERSION /;"	d
+GL_MAP_FLUSH_EXPLICIT_BIT	gl3stub.h	/^#define GL_MAP_FLUSH_EXPLICIT_BIT /;"	d
+GL_MAP_INVALIDATE_BUFFER_BIT	gl3stub.h	/^#define GL_MAP_INVALIDATE_BUFFER_BIT /;"	d
+GL_MAP_INVALIDATE_RANGE_BIT	gl3stub.h	/^#define GL_MAP_INVALIDATE_RANGE_BIT /;"	d
+GL_MAP_READ_BIT	gl3stub.h	/^#define GL_MAP_READ_BIT /;"	d
+GL_MAP_UNSYNCHRONIZED_BIT	gl3stub.h	/^#define GL_MAP_UNSYNCHRONIZED_BIT /;"	d
+GL_MAP_WRITE_BIT	gl3stub.h	/^#define GL_MAP_WRITE_BIT /;"	d
+GL_MAX	gl3stub.h	/^#define GL_MAX /;"	d
+GL_MAX_3D_TEXTURE_SIZE	gl3stub.h	/^#define GL_MAX_3D_TEXTURE_SIZE /;"	d
+GL_MAX_ARRAY_TEXTURE_LAYERS	gl3stub.h	/^#define GL_MAX_ARRAY_TEXTURE_LAYERS /;"	d
+GL_MAX_COLOR_ATTACHMENTS	gl3stub.h	/^#define GL_MAX_COLOR_ATTACHMENTS /;"	d
+GL_MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS	gl3stub.h	/^#define GL_MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS /;"	d
+GL_MAX_COMBINED_UNIFORM_BLOCKS	gl3stub.h	/^#define GL_MAX_COMBINED_UNIFORM_BLOCKS /;"	d
+GL_MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS	gl3stub.h	/^#define GL_MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS /;"	d
+GL_MAX_DRAW_BUFFERS	gl3stub.h	/^#define GL_MAX_DRAW_BUFFERS /;"	d
+GL_MAX_ELEMENTS_INDICES	gl3stub.h	/^#define GL_MAX_ELEMENTS_INDICES /;"	d
+GL_MAX_ELEMENTS_VERTICES	gl3stub.h	/^#define GL_MAX_ELEMENTS_VERTICES /;"	d
+GL_MAX_ELEMENT_INDEX	gl3stub.h	/^#define GL_MAX_ELEMENT_INDEX /;"	d
+GL_MAX_FRAGMENT_INPUT_COMPONENTS	gl3stub.h	/^#define GL_MAX_FRAGMENT_INPUT_COMPONENTS /;"	d
+GL_MAX_FRAGMENT_UNIFORM_BLOCKS	gl3stub.h	/^#define GL_MAX_FRAGMENT_UNIFORM_BLOCKS /;"	d
+GL_MAX_FRAGMENT_UNIFORM_COMPONENTS	gl3stub.h	/^#define GL_MAX_FRAGMENT_UNIFORM_COMPONENTS /;"	d
+GL_MAX_PROGRAM_TEXEL_OFFSET	gl3stub.h	/^#define GL_MAX_PROGRAM_TEXEL_OFFSET /;"	d
+GL_MAX_SAMPLES	gl3stub.h	/^#define GL_MAX_SAMPLES /;"	d
+GL_MAX_SERVER_WAIT_TIMEOUT	gl3stub.h	/^#define GL_MAX_SERVER_WAIT_TIMEOUT /;"	d
+GL_MAX_TEXTURE_LOD_BIAS	gl3stub.h	/^#define GL_MAX_TEXTURE_LOD_BIAS /;"	d
+GL_MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS	gl3stub.h	/^#define GL_MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS /;"	d
+GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS	gl3stub.h	/^#define GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS /;"	d
+GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS	gl3stub.h	/^#define GL_MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS /;"	d
+GL_MAX_UNIFORM_BLOCK_SIZE	gl3stub.h	/^#define GL_MAX_UNIFORM_BLOCK_SIZE /;"	d
+GL_MAX_UNIFORM_BUFFER_BINDINGS	gl3stub.h	/^#define GL_MAX_UNIFORM_BUFFER_BINDINGS /;"	d
+GL_MAX_VARYING_COMPONENTS	gl3stub.h	/^#define GL_MAX_VARYING_COMPONENTS /;"	d
+GL_MAX_VERTEX_OUTPUT_COMPONENTS	gl3stub.h	/^#define GL_MAX_VERTEX_OUTPUT_COMPONENTS /;"	d
+GL_MAX_VERTEX_UNIFORM_BLOCKS	gl3stub.h	/^#define GL_MAX_VERTEX_UNIFORM_BLOCKS /;"	d
+GL_MAX_VERTEX_UNIFORM_COMPONENTS	gl3stub.h	/^#define GL_MAX_VERTEX_UNIFORM_COMPONENTS /;"	d
+GL_MIN	gl3stub.h	/^#define GL_MIN /;"	d
+GL_MINOR_VERSION	gl3stub.h	/^#define GL_MINOR_VERSION /;"	d
+GL_MIN_PROGRAM_TEXEL_OFFSET	gl3stub.h	/^#define GL_MIN_PROGRAM_TEXEL_OFFSET /;"	d
+GL_NUM_EXTENSIONS	gl3stub.h	/^#define GL_NUM_EXTENSIONS /;"	d
+GL_NUM_PROGRAM_BINARY_FORMATS	gl3stub.h	/^#define GL_NUM_PROGRAM_BINARY_FORMATS /;"	d
+GL_NUM_SAMPLE_COUNTS	gl3stub.h	/^#define GL_NUM_SAMPLE_COUNTS /;"	d
+GL_OBJECT_TYPE	gl3stub.h	/^#define GL_OBJECT_TYPE /;"	d
+GL_PACK_ROW_LENGTH	gl3stub.h	/^#define GL_PACK_ROW_LENGTH /;"	d
+GL_PACK_SKIP_PIXELS	gl3stub.h	/^#define GL_PACK_SKIP_PIXELS /;"	d
+GL_PACK_SKIP_ROWS	gl3stub.h	/^#define GL_PACK_SKIP_ROWS /;"	d
+GL_PIXEL_PACK_BUFFER	gl3stub.h	/^#define GL_PIXEL_PACK_BUFFER /;"	d
+GL_PIXEL_PACK_BUFFER_BINDING	gl3stub.h	/^#define GL_PIXEL_PACK_BUFFER_BINDING /;"	d
+GL_PIXEL_UNPACK_BUFFER	gl3stub.h	/^#define GL_PIXEL_UNPACK_BUFFER /;"	d
+GL_PIXEL_UNPACK_BUFFER_BINDING	gl3stub.h	/^#define GL_PIXEL_UNPACK_BUFFER_BINDING /;"	d
+GL_PRIMITIVE_RESTART_FIXED_INDEX	gl3stub.h	/^#define GL_PRIMITIVE_RESTART_FIXED_INDEX /;"	d
+GL_PROGRAM_BINARY_FORMATS	gl3stub.h	/^#define GL_PROGRAM_BINARY_FORMATS /;"	d
+GL_PROGRAM_BINARY_LENGTH	gl3stub.h	/^#define GL_PROGRAM_BINARY_LENGTH /;"	d
+GL_PROGRAM_BINARY_RETRIEVABLE_HINT	gl3stub.h	/^#define GL_PROGRAM_BINARY_RETRIEVABLE_HINT /;"	d
+GL_QUERY_RESULT	gl3stub.h	/^#define GL_QUERY_RESULT /;"	d
+GL_QUERY_RESULT_AVAILABLE	gl3stub.h	/^#define GL_QUERY_RESULT_AVAILABLE /;"	d
+GL_R11F_G11F_B10F	gl3stub.h	/^#define GL_R11F_G11F_B10F /;"	d
+GL_R16F	gl3stub.h	/^#define GL_R16F /;"	d
+GL_R16I	gl3stub.h	/^#define GL_R16I /;"	d
+GL_R16UI	gl3stub.h	/^#define GL_R16UI /;"	d
+GL_R32F	gl3stub.h	/^#define GL_R32F /;"	d
+GL_R32I	gl3stub.h	/^#define GL_R32I /;"	d
+GL_R32UI	gl3stub.h	/^#define GL_R32UI /;"	d
+GL_R8	gl3stub.h	/^#define GL_R8 /;"	d
+GL_R8I	gl3stub.h	/^#define GL_R8I /;"	d
+GL_R8UI	gl3stub.h	/^#define GL_R8UI /;"	d
+GL_R8_SNORM	gl3stub.h	/^#define GL_R8_SNORM /;"	d
+GL_RASTERIZER_DISCARD	gl3stub.h	/^#define GL_RASTERIZER_DISCARD /;"	d
+GL_READ_BUFFER	gl3stub.h	/^#define GL_READ_BUFFER /;"	d
+GL_READ_FRAMEBUFFER	gl3stub.h	/^#define GL_READ_FRAMEBUFFER /;"	d
+GL_READ_FRAMEBUFFER_BINDING	gl3stub.h	/^#define GL_READ_FRAMEBUFFER_BINDING /;"	d
+GL_RED	gl3stub.h	/^#define GL_RED /;"	d
+GL_RED_INTEGER	gl3stub.h	/^#define GL_RED_INTEGER /;"	d
+GL_RENDERBUFFER_SAMPLES	gl3stub.h	/^#define GL_RENDERBUFFER_SAMPLES /;"	d
+GL_RG	gl3stub.h	/^#define GL_RG /;"	d
+GL_RG16F	gl3stub.h	/^#define GL_RG16F /;"	d
+GL_RG16I	gl3stub.h	/^#define GL_RG16I /;"	d
+GL_RG16UI	gl3stub.h	/^#define GL_RG16UI /;"	d
+GL_RG32F	gl3stub.h	/^#define GL_RG32F /;"	d
+GL_RG32I	gl3stub.h	/^#define GL_RG32I /;"	d
+GL_RG32UI	gl3stub.h	/^#define GL_RG32UI /;"	d
+GL_RG8	gl3stub.h	/^#define GL_RG8 /;"	d
+GL_RG8I	gl3stub.h	/^#define GL_RG8I /;"	d
+GL_RG8UI	gl3stub.h	/^#define GL_RG8UI /;"	d
+GL_RG8_SNORM	gl3stub.h	/^#define GL_RG8_SNORM /;"	d
+GL_RGB10_A2	gl3stub.h	/^#define GL_RGB10_A2 /;"	d
+GL_RGB10_A2UI	gl3stub.h	/^#define GL_RGB10_A2UI /;"	d
+GL_RGB16F	gl3stub.h	/^#define GL_RGB16F /;"	d
+GL_RGB16I	gl3stub.h	/^#define GL_RGB16I /;"	d
+GL_RGB16UI	gl3stub.h	/^#define GL_RGB16UI /;"	d
+GL_RGB32F	gl3stub.h	/^#define GL_RGB32F /;"	d
+GL_RGB32I	gl3stub.h	/^#define GL_RGB32I /;"	d
+GL_RGB32UI	gl3stub.h	/^#define GL_RGB32UI /;"	d
+GL_RGB8	gl3stub.h	/^#define GL_RGB8 /;"	d
+GL_RGB8I	gl3stub.h	/^#define GL_RGB8I /;"	d
+GL_RGB8UI	gl3stub.h	/^#define GL_RGB8UI /;"	d
+GL_RGB8_SNORM	gl3stub.h	/^#define GL_RGB8_SNORM /;"	d
+GL_RGB9_E5	gl3stub.h	/^#define GL_RGB9_E5 /;"	d
+GL_RGBA16F	gl3stub.h	/^#define GL_RGBA16F /;"	d
+GL_RGBA16I	gl3stub.h	/^#define GL_RGBA16I /;"	d
+GL_RGBA16UI	gl3stub.h	/^#define GL_RGBA16UI /;"	d
+GL_RGBA32F	gl3stub.h	/^#define GL_RGBA32F /;"	d
+GL_RGBA32I	gl3stub.h	/^#define GL_RGBA32I /;"	d
+GL_RGBA32UI	gl3stub.h	/^#define GL_RGBA32UI /;"	d
+GL_RGBA8	gl3stub.h	/^#define GL_RGBA8 /;"	d
+GL_RGBA8I	gl3stub.h	/^#define GL_RGBA8I /;"	d
+GL_RGBA8UI	gl3stub.h	/^#define GL_RGBA8UI /;"	d
+GL_RGBA8_SNORM	gl3stub.h	/^#define GL_RGBA8_SNORM /;"	d
+GL_RGBA_INTEGER	gl3stub.h	/^#define GL_RGBA_INTEGER /;"	d
+GL_RGB_INTEGER	gl3stub.h	/^#define GL_RGB_INTEGER /;"	d
+GL_RG_INTEGER	gl3stub.h	/^#define GL_RG_INTEGER /;"	d
+GL_SAMPLER_2D_ARRAY	gl3stub.h	/^#define GL_SAMPLER_2D_ARRAY /;"	d
+GL_SAMPLER_2D_ARRAY_SHADOW	gl3stub.h	/^#define GL_SAMPLER_2D_ARRAY_SHADOW /;"	d
+GL_SAMPLER_2D_SHADOW	gl3stub.h	/^#define GL_SAMPLER_2D_SHADOW /;"	d
+GL_SAMPLER_3D	gl3stub.h	/^#define GL_SAMPLER_3D /;"	d
+GL_SAMPLER_BINDING	gl3stub.h	/^#define GL_SAMPLER_BINDING /;"	d
+GL_SAMPLER_CUBE_SHADOW	gl3stub.h	/^#define GL_SAMPLER_CUBE_SHADOW /;"	d
+GL_SEPARATE_ATTRIBS	gl3stub.h	/^#define GL_SEPARATE_ATTRIBS /;"	d
+GL_SIGNALED	gl3stub.h	/^#define GL_SIGNALED /;"	d
+GL_SIGNED_NORMALIZED	gl3stub.h	/^#define GL_SIGNED_NORMALIZED /;"	d
+GL_SRGB	gl3stub.h	/^#define GL_SRGB /;"	d
+GL_SRGB8	gl3stub.h	/^#define GL_SRGB8 /;"	d
+GL_SRGB8_ALPHA8	gl3stub.h	/^#define GL_SRGB8_ALPHA8 /;"	d
+GL_STATIC_COPY	gl3stub.h	/^#define GL_STATIC_COPY /;"	d
+GL_STATIC_READ	gl3stub.h	/^#define GL_STATIC_READ /;"	d
+GL_STENCIL	gl3stub.h	/^#define GL_STENCIL /;"	d
+GL_STREAM_COPY	gl3stub.h	/^#define GL_STREAM_COPY /;"	d
+GL_STREAM_READ	gl3stub.h	/^#define GL_STREAM_READ /;"	d
+GL_SYNC_CONDITION	gl3stub.h	/^#define GL_SYNC_CONDITION /;"	d
+GL_SYNC_FENCE	gl3stub.h	/^#define GL_SYNC_FENCE /;"	d
+GL_SYNC_FLAGS	gl3stub.h	/^#define GL_SYNC_FLAGS /;"	d
+GL_SYNC_FLUSH_COMMANDS_BIT	gl3stub.h	/^#define GL_SYNC_FLUSH_COMMANDS_BIT /;"	d
+GL_SYNC_GPU_COMMANDS_COMPLETE	gl3stub.h	/^#define GL_SYNC_GPU_COMMANDS_COMPLETE /;"	d
+GL_SYNC_STATUS	gl3stub.h	/^#define GL_SYNC_STATUS /;"	d
+GL_TEXTURE_2D_ARRAY	gl3stub.h	/^#define GL_TEXTURE_2D_ARRAY /;"	d
+GL_TEXTURE_3D	gl3stub.h	/^#define GL_TEXTURE_3D /;"	d
+GL_TEXTURE_BASE_LEVEL	gl3stub.h	/^#define GL_TEXTURE_BASE_LEVEL /;"	d
+GL_TEXTURE_BINDING_2D_ARRAY	gl3stub.h	/^#define GL_TEXTURE_BINDING_2D_ARRAY /;"	d
+GL_TEXTURE_BINDING_3D	gl3stub.h	/^#define GL_TEXTURE_BINDING_3D /;"	d
+GL_TEXTURE_COMPARE_FUNC	gl3stub.h	/^#define GL_TEXTURE_COMPARE_FUNC /;"	d
+GL_TEXTURE_COMPARE_MODE	gl3stub.h	/^#define GL_TEXTURE_COMPARE_MODE /;"	d
+GL_TEXTURE_IMMUTABLE_FORMAT	gl3stub.h	/^#define GL_TEXTURE_IMMUTABLE_FORMAT /;"	d
+GL_TEXTURE_IMMUTABLE_LEVELS	gl3stub.h	/^#define GL_TEXTURE_IMMUTABLE_LEVELS /;"	d
+GL_TEXTURE_MAX_LEVEL	gl3stub.h	/^#define GL_TEXTURE_MAX_LEVEL /;"	d
+GL_TEXTURE_MAX_LOD	gl3stub.h	/^#define GL_TEXTURE_MAX_LOD /;"	d
+GL_TEXTURE_MIN_LOD	gl3stub.h	/^#define GL_TEXTURE_MIN_LOD /;"	d
+GL_TEXTURE_SWIZZLE_A	gl3stub.h	/^#define GL_TEXTURE_SWIZZLE_A /;"	d
+GL_TEXTURE_SWIZZLE_B	gl3stub.h	/^#define GL_TEXTURE_SWIZZLE_B /;"	d
+GL_TEXTURE_SWIZZLE_G	gl3stub.h	/^#define GL_TEXTURE_SWIZZLE_G /;"	d
+GL_TEXTURE_SWIZZLE_R	gl3stub.h	/^#define GL_TEXTURE_SWIZZLE_R /;"	d
+GL_TEXTURE_WRAP_R	gl3stub.h	/^#define GL_TEXTURE_WRAP_R /;"	d
+GL_TIMEOUT_EXPIRED	gl3stub.h	/^#define GL_TIMEOUT_EXPIRED /;"	d
+GL_TIMEOUT_IGNORED	gl3stub.h	/^#define GL_TIMEOUT_IGNORED /;"	d
+GL_TRANSFORM_FEEDBACK	gl3stub.h	/^#define GL_TRANSFORM_FEEDBACK /;"	d
+GL_TRANSFORM_FEEDBACK_ACTIVE	gl3stub.h	/^#define GL_TRANSFORM_FEEDBACK_ACTIVE /;"	d
+GL_TRANSFORM_FEEDBACK_BINDING	gl3stub.h	/^#define GL_TRANSFORM_FEEDBACK_BINDING /;"	d
+GL_TRANSFORM_FEEDBACK_BUFFER	gl3stub.h	/^#define GL_TRANSFORM_FEEDBACK_BUFFER /;"	d
+GL_TRANSFORM_FEEDBACK_BUFFER_BINDING	gl3stub.h	/^#define GL_TRANSFORM_FEEDBACK_BUFFER_BINDING /;"	d
+GL_TRANSFORM_FEEDBACK_BUFFER_MODE	gl3stub.h	/^#define GL_TRANSFORM_FEEDBACK_BUFFER_MODE /;"	d
+GL_TRANSFORM_FEEDBACK_BUFFER_SIZE	gl3stub.h	/^#define GL_TRANSFORM_FEEDBACK_BUFFER_SIZE /;"	d
+GL_TRANSFORM_FEEDBACK_BUFFER_START	gl3stub.h	/^#define GL_TRANSFORM_FEEDBACK_BUFFER_START /;"	d
+GL_TRANSFORM_FEEDBACK_PAUSED	gl3stub.h	/^#define GL_TRANSFORM_FEEDBACK_PAUSED /;"	d
+GL_TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN	gl3stub.h	/^#define GL_TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN /;"	d
+GL_TRANSFORM_FEEDBACK_VARYINGS	gl3stub.h	/^#define GL_TRANSFORM_FEEDBACK_VARYINGS /;"	d
+GL_TRANSFORM_FEEDBACK_VARYING_MAX_LENGTH	gl3stub.h	/^#define GL_TRANSFORM_FEEDBACK_VARYING_MAX_LENGTH /;"	d
+GL_UNIFORM_ARRAY_STRIDE	gl3stub.h	/^#define GL_UNIFORM_ARRAY_STRIDE /;"	d
+GL_UNIFORM_BLOCK_ACTIVE_UNIFORMS	gl3stub.h	/^#define GL_UNIFORM_BLOCK_ACTIVE_UNIFORMS /;"	d
+GL_UNIFORM_BLOCK_ACTIVE_UNIFORM_INDICES	gl3stub.h	/^#define GL_UNIFORM_BLOCK_ACTIVE_UNIFORM_INDICES /;"	d
+GL_UNIFORM_BLOCK_BINDING	gl3stub.h	/^#define GL_UNIFORM_BLOCK_BINDING /;"	d
+GL_UNIFORM_BLOCK_DATA_SIZE	gl3stub.h	/^#define GL_UNIFORM_BLOCK_DATA_SIZE /;"	d
+GL_UNIFORM_BLOCK_INDEX	gl3stub.h	/^#define GL_UNIFORM_BLOCK_INDEX /;"	d
+GL_UNIFORM_BLOCK_NAME_LENGTH	gl3stub.h	/^#define GL_UNIFORM_BLOCK_NAME_LENGTH /;"	d
+GL_UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER	gl3stub.h	/^#define GL_UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER /;"	d
+GL_UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER	gl3stub.h	/^#define GL_UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER /;"	d
+GL_UNIFORM_BUFFER	gl3stub.h	/^#define GL_UNIFORM_BUFFER /;"	d
+GL_UNIFORM_BUFFER_BINDING	gl3stub.h	/^#define GL_UNIFORM_BUFFER_BINDING /;"	d
+GL_UNIFORM_BUFFER_OFFSET_ALIGNMENT	gl3stub.h	/^#define GL_UNIFORM_BUFFER_OFFSET_ALIGNMENT /;"	d
+GL_UNIFORM_BUFFER_SIZE	gl3stub.h	/^#define GL_UNIFORM_BUFFER_SIZE /;"	d
+GL_UNIFORM_BUFFER_START	gl3stub.h	/^#define GL_UNIFORM_BUFFER_START /;"	d
+GL_UNIFORM_IS_ROW_MAJOR	gl3stub.h	/^#define GL_UNIFORM_IS_ROW_MAJOR /;"	d
+GL_UNIFORM_MATRIX_STRIDE	gl3stub.h	/^#define GL_UNIFORM_MATRIX_STRIDE /;"	d
+GL_UNIFORM_NAME_LENGTH	gl3stub.h	/^#define GL_UNIFORM_NAME_LENGTH /;"	d
+GL_UNIFORM_OFFSET	gl3stub.h	/^#define GL_UNIFORM_OFFSET /;"	d
+GL_UNIFORM_SIZE	gl3stub.h	/^#define GL_UNIFORM_SIZE /;"	d
+GL_UNIFORM_TYPE	gl3stub.h	/^#define GL_UNIFORM_TYPE /;"	d
+GL_UNPACK_IMAGE_HEIGHT	gl3stub.h	/^#define GL_UNPACK_IMAGE_HEIGHT /;"	d
+GL_UNPACK_ROW_LENGTH	gl3stub.h	/^#define GL_UNPACK_ROW_LENGTH /;"	d
+GL_UNPACK_SKIP_IMAGES	gl3stub.h	/^#define GL_UNPACK_SKIP_IMAGES /;"	d
+GL_UNPACK_SKIP_PIXELS	gl3stub.h	/^#define GL_UNPACK_SKIP_PIXELS /;"	d
+GL_UNPACK_SKIP_ROWS	gl3stub.h	/^#define GL_UNPACK_SKIP_ROWS /;"	d
+GL_UNSIGNALED	gl3stub.h	/^#define GL_UNSIGNALED /;"	d
+GL_UNSIGNED_INT_10F_11F_11F_REV	gl3stub.h	/^#define GL_UNSIGNED_INT_10F_11F_11F_REV /;"	d
+GL_UNSIGNED_INT_24_8	gl3stub.h	/^#define GL_UNSIGNED_INT_24_8 /;"	d
+GL_UNSIGNED_INT_2_10_10_10_REV	gl3stub.h	/^#define GL_UNSIGNED_INT_2_10_10_10_REV /;"	d
+GL_UNSIGNED_INT_5_9_9_9_REV	gl3stub.h	/^#define GL_UNSIGNED_INT_5_9_9_9_REV /;"	d
+GL_UNSIGNED_INT_SAMPLER_2D	gl3stub.h	/^#define GL_UNSIGNED_INT_SAMPLER_2D /;"	d
+GL_UNSIGNED_INT_SAMPLER_2D_ARRAY	gl3stub.h	/^#define GL_UNSIGNED_INT_SAMPLER_2D_ARRAY /;"	d
+GL_UNSIGNED_INT_SAMPLER_3D	gl3stub.h	/^#define GL_UNSIGNED_INT_SAMPLER_3D /;"	d
+GL_UNSIGNED_INT_SAMPLER_CUBE	gl3stub.h	/^#define GL_UNSIGNED_INT_SAMPLER_CUBE /;"	d
+GL_UNSIGNED_INT_VEC2	gl3stub.h	/^#define GL_UNSIGNED_INT_VEC2 /;"	d
+GL_UNSIGNED_INT_VEC3	gl3stub.h	/^#define GL_UNSIGNED_INT_VEC3 /;"	d
+GL_UNSIGNED_INT_VEC4	gl3stub.h	/^#define GL_UNSIGNED_INT_VEC4 /;"	d
+GL_UNSIGNED_NORMALIZED	gl3stub.h	/^#define GL_UNSIGNED_NORMALIZED /;"	d
+GL_VERTEX_ARRAY_BINDING	gl3stub.h	/^#define GL_VERTEX_ARRAY_BINDING /;"	d
+GL_VERTEX_ATTRIB_ARRAY_DIVISOR	gl3stub.h	/^#define GL_VERTEX_ATTRIB_ARRAY_DIVISOR /;"	d
+GL_VERTEX_ATTRIB_ARRAY_INTEGER	gl3stub.h	/^#define GL_VERTEX_ATTRIB_ARRAY_INTEGER /;"	d
+GL_WAIT_FAILED	gl3stub.h	/^#define GL_WAIT_FAILED /;"	d
+GLhalf	gl3stub.h	/^typedef unsigned short   GLhalf;$/;"	t
+GLint64	gl3stub.h	/^typedef khronos_int64_t  GLint64;$/;"	t
+GLsync	gl3stub.h	/^typedef struct __GLsync *GLsync;$/;"	t	typeref:struct:__GLsync
+GLuint64	gl3stub.h	/^typedef khronos_uint64_t GLuint64;$/;"	t
+Java_com_android_gles3jni_GLES3JNILib_init	gles3jni.cpp	/^Java_com_android_gles3jni_GLES3JNILib_init(JNIEnv* env, jobject obj) {$/;"	f
+Java_com_android_gles3jni_GLES3JNILib_resize	gles3jni.cpp	/^Java_com_android_gles3jni_GLES3JNILib_resize(JNIEnv* env, jobject obj, jint width, jint height) {$/;"	f
+Java_com_android_gles3jni_GLES3JNILib_step	gles3jni.cpp	/^Java_com_android_gles3jni_GLES3JNILib_step(JNIEnv* env, jobject obj) {$/;"	f
+LOCAL_CFLAGS	Android-11.mk	/^LOCAL_CFLAGS     := -Werror -DDYNAMIC_ES3$/;"	m
+LOCAL_CFLAGS	Android.mk	/^LOCAL_CFLAGS    := -Werror$/;"	m
+LOCAL_LDLIBS	Android-11.mk	/^LOCAL_LDLIBS     := -llog -lGLESv2 -lEGL$/;"	m
+LOCAL_LDLIBS	Android.mk	/^LOCAL_LDLIBS    := -llog -lGLESv3 -lEGL$/;"	m
+LOCAL_MODULE	Android-11.mk	/^LOCAL_MODULE     := libgles3jni$/;"	m
+LOCAL_MODULE	Android.mk	/^LOCAL_MODULE    := libgles3jni$/;"	m
+LOCAL_PATH	Android-11.mk	/^LOCAL_PATH:= $(call my-dir)$/;"	m
+LOCAL_PATH	Android.mk	/^LOCAL_PATH:= $(call my-dir)$/;"	m
+LOCAL_SRC_FILES	Android-11.mk	/^LOCAL_SRC_FILES  := gles3jni.cpp \\$/;"	m
+LOCAL_SRC_FILES	Android.mk	/^LOCAL_SRC_FILES := gles3jni.cpp \\$/;"	m
+LOG_TAG	gles3jni.h	/^#define LOG_TAG /;"	d
+MAX_INSTANCES	gles3jni.h	/^#define MAX_INSTANCES /;"	d
+MAX_INSTANCES_PER_SIDE	gles3jni.h	/^#define MAX_INSTANCES_PER_SIDE /;"	d
+MAX_ROT_SPEED	gles3jni.h	/^#define MAX_ROT_SPEED /;"	d
+OFFSET_ATTRIB	RendererES3.cpp	/^#define OFFSET_ATTRIB /;"	d	file:
+POS_ATTRIB	RendererES3.cpp	/^#define POS_ATTRIB /;"	d	file:
+QUAD	gles3jni.cpp	/^const Vertex QUAD[4] = {$/;"	v
+Renderer	gles3jni.cpp	/^Renderer::Renderer()$/;"	f	class:Renderer
+Renderer	gles3jni.h	/^class Renderer {$/;"	c
+RendererES2	RendererES2.cpp	/^RendererES2::RendererES2()$/;"	f	class:RendererES2
+RendererES2	RendererES2.cpp	/^class RendererES2: public Renderer {$/;"	c	file:
+RendererES3	RendererES3.cpp	/^RendererES3::RendererES3()$/;"	f	class:RendererES3
+RendererES3	RendererES3.cpp	/^class RendererES3: public Renderer {$/;"	c	file:
+SCALEROT_ATTRIB	RendererES3.cpp	/^#define SCALEROT_ATTRIB /;"	d	file:
+STR	RendererES3.cpp	/^#define STR(/;"	d	file:
+STRV	RendererES3.cpp	/^#define STRV(/;"	d	file:
+TWO_PI	gles3jni.h	/^#define TWO_PI /;"	d
+VB_COUNT	RendererES3.cpp	/^    enum {VB_INSTANCE, VB_SCALEROT, VB_OFFSET, VB_COUNT};$/;"	e	enum:RendererES3::__anon1	file:
+VB_INSTANCE	RendererES3.cpp	/^    enum {VB_INSTANCE, VB_SCALEROT, VB_OFFSET, VB_COUNT};$/;"	e	enum:RendererES3::__anon1	file:
+VB_OFFSET	RendererES3.cpp	/^    enum {VB_INSTANCE, VB_SCALEROT, VB_OFFSET, VB_COUNT};$/;"	e	enum:RendererES3::__anon1	file:
+VB_SCALEROT	RendererES3.cpp	/^    enum {VB_INSTANCE, VB_SCALEROT, VB_OFFSET, VB_COUNT};$/;"	e	enum:RendererES3::__anon1	file:
+VERTEX_SHADER	RendererES2.cpp	/^static const char VERTEX_SHADER[] =$/;"	v	file:
+VERTEX_SHADER	RendererES3.cpp	/^static const char VERTEX_SHADER[] =$/;"	v	file:
+Vertex	gles3jni.h	/^struct Vertex {$/;"	s
+__gl3_h_	gl3stub.h	/^#define __gl3_h_$/;"	d
+calcSceneParams	gles3jni.cpp	/^void Renderer::calcSceneParams(unsigned int w, unsigned int h,$/;"	f	class:Renderer
+checkGlError	gles3jni.cpp	/^bool checkGlError(const char* funcName) {$/;"	f
+createES2Renderer	RendererES2.cpp	/^Renderer* createES2Renderer() {$/;"	f
+createES3Renderer	RendererES3.cpp	/^Renderer* createES3Renderer() {$/;"	f
+createProgram	gles3jni.cpp	/^GLuint createProgram(const char* vtxSrc, const char* fragSrc) {$/;"	f
+createShader	gles3jni.cpp	/^GLuint createShader(GLenum shaderType, const char* src) {$/;"	f
+draw	RendererES2.cpp	/^void RendererES2::draw(unsigned int numInstances) {$/;"	f	class:RendererES2
+draw	RendererES3.cpp	/^void RendererES3::draw(unsigned int numInstances) {$/;"	f	class:RendererES3
+g_renderer	gles3jni.cpp	/^static Renderer* g_renderer = NULL;$/;"	v	file:
+gl3stubInit	gl3stub.c	/^GLboolean gl3stubInit() {$/;"	f
+gl3stubInit	gles3jni.cpp	/^static GLboolean gl3stubInit() {$/;"	f	file:
+glBeginQuery	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glBeginQuery) (GLenum target, GLuint id);$/;"	v
+glBeginTransformFeedback	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glBeginTransformFeedback) (GLenum primitiveMode);$/;"	v
+glBindBufferBase	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glBindBufferBase) (GLenum target, GLuint index, GLuint buffer);$/;"	v
+glBindBufferRange	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glBindBufferRange) (GLenum target, GLuint index, GLuint buffer, GLintptr offset, GLsizeiptr size);$/;"	v
+glBindSampler	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glBindSampler) (GLuint unit, GLuint sampler);$/;"	v
+glBindTransformFeedback	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glBindTransformFeedback) (GLenum target, GLuint id);$/;"	v
+glBindVertexArray	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glBindVertexArray) (GLuint array);$/;"	v
+glBlitFramebuffer	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glBlitFramebuffer) (GLint srcX0, GLint srcY0, GLint srcX1, GLint srcY1, GLint dstX0, GLint dstY0, GLint dstX1, GLint dstY1, GLbitfield mask, GLenum filter);$/;"	v
+glClearBufferfi	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glClearBufferfi) (GLenum buffer, GLint drawbuffer, GLfloat depth, GLint stencil);$/;"	v
+glClearBufferfv	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glClearBufferfv) (GLenum buffer, GLint drawbuffer, const GLfloat* value);$/;"	v
+glClearBufferiv	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glClearBufferiv) (GLenum buffer, GLint drawbuffer, const GLint* value);$/;"	v
+glClearBufferuiv	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glClearBufferuiv) (GLenum buffer, GLint drawbuffer, const GLuint* value);$/;"	v
+glClientWaitSync	gl3stub.c	/^GL_APICALL GLenum         (* GL_APIENTRY glClientWaitSync) (GLsync sync, GLbitfield flags, GLuint64 timeout);$/;"	v
+glCompressedTexImage3D	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glCompressedTexImage3D) (GLenum target, GLint level, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLsizei imageSize, const GLvoid* data);$/;"	v
+glCompressedTexSubImage3D	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glCompressedTexSubImage3D) (GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLsizei imageSize, const GLvoid* data);$/;"	v
+glCopyBufferSubData	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glCopyBufferSubData) (GLenum readTarget, GLenum writeTarget, GLintptr readOffset, GLintptr writeOffset, GLsizeiptr size);$/;"	v
+glCopyTexSubImage3D	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glCopyTexSubImage3D) (GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLint x, GLint y, GLsizei width, GLsizei height);$/;"	v
+glDeleteQueries	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glDeleteQueries) (GLsizei n, const GLuint* ids);$/;"	v
+glDeleteSamplers	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glDeleteSamplers) (GLsizei count, const GLuint* samplers);$/;"	v
+glDeleteSync	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glDeleteSync) (GLsync sync);$/;"	v
+glDeleteTransformFeedbacks	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glDeleteTransformFeedbacks) (GLsizei n, const GLuint* ids);$/;"	v
+glDeleteVertexArrays	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glDeleteVertexArrays) (GLsizei n, const GLuint* arrays);$/;"	v
+glDrawArraysInstanced	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glDrawArraysInstanced) (GLenum mode, GLint first, GLsizei count, GLsizei instanceCount);$/;"	v
+glDrawBuffers	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glDrawBuffers) (GLsizei n, const GLenum* bufs);$/;"	v
+glDrawElementsInstanced	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glDrawElementsInstanced) (GLenum mode, GLsizei count, GLenum type, const GLvoid* indices, GLsizei instanceCount);$/;"	v
+glDrawRangeElements	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glDrawRangeElements) (GLenum mode, GLuint start, GLuint end, GLsizei count, GLenum type, const GLvoid* indices);$/;"	v
+glEndQuery	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glEndQuery) (GLenum target);$/;"	v
+glEndTransformFeedback	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glEndTransformFeedback) (void);$/;"	v
+glFenceSync	gl3stub.c	/^GL_APICALL GLsync         (* GL_APIENTRY glFenceSync) (GLenum condition, GLbitfield flags);$/;"	v
+glFlushMappedBufferRange	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glFlushMappedBufferRange) (GLenum target, GLintptr offset, GLsizeiptr length);$/;"	v
+glFramebufferTextureLayer	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glFramebufferTextureLayer) (GLenum target, GLenum attachment, GLuint texture, GLint level, GLint layer);$/;"	v
+glGenQueries	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glGenQueries) (GLsizei n, GLuint* ids);$/;"	v
+glGenSamplers	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glGenSamplers) (GLsizei count, GLuint* samplers);$/;"	v
+glGenTransformFeedbacks	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glGenTransformFeedbacks) (GLsizei n, GLuint* ids);$/;"	v
+glGenVertexArrays	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glGenVertexArrays) (GLsizei n, GLuint* arrays);$/;"	v
+glGetActiveUniformBlockName	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glGetActiveUniformBlockName) (GLuint program, GLuint uniformBlockIndex, GLsizei bufSize, GLsizei* length, GLchar* uniformBlockName);$/;"	v
+glGetActiveUniformBlockiv	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glGetActiveUniformBlockiv) (GLuint program, GLuint uniformBlockIndex, GLenum pname, GLint* params);$/;"	v
+glGetActiveUniformsiv	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glGetActiveUniformsiv) (GLuint program, GLsizei uniformCount, const GLuint* uniformIndices, GLenum pname, GLint* params);$/;"	v
+glGetBufferParameteri64v	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glGetBufferParameteri64v) (GLenum target, GLenum pname, GLint64* params);$/;"	v
+glGetBufferPointerv	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glGetBufferPointerv) (GLenum target, GLenum pname, GLvoid** params);$/;"	v
+glGetFragDataLocation	gl3stub.c	/^GL_APICALL GLint          (* GL_APIENTRY glGetFragDataLocation) (GLuint program, const GLchar *name);$/;"	v
+glGetInteger64i_v	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glGetInteger64i_v) (GLenum target, GLuint index, GLint64* data);$/;"	v
+glGetInteger64v	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glGetInteger64v) (GLenum pname, GLint64* params);$/;"	v
+glGetIntegeri_v	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glGetIntegeri_v) (GLenum target, GLuint index, GLint* data);$/;"	v
+glGetInternalformativ	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glGetInternalformativ) (GLenum target, GLenum internalformat, GLenum pname, GLsizei bufSize, GLint* params);$/;"	v
+glGetProgramBinary	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glGetProgramBinary) (GLuint program, GLsizei bufSize, GLsizei* length, GLenum* binaryFormat, GLvoid* binary);$/;"	v
+glGetQueryObjectuiv	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glGetQueryObjectuiv) (GLuint id, GLenum pname, GLuint* params);$/;"	v
+glGetQueryiv	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glGetQueryiv) (GLenum target, GLenum pname, GLint* params);$/;"	v
+glGetSamplerParameterfv	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glGetSamplerParameterfv) (GLuint sampler, GLenum pname, GLfloat* params);$/;"	v
+glGetSamplerParameteriv	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glGetSamplerParameteriv) (GLuint sampler, GLenum pname, GLint* params);$/;"	v
+glGetStringi	gl3stub.c	/^GL_APICALL const GLubyte* (* GL_APIENTRY glGetStringi) (GLenum name, GLuint index);$/;"	v
+glGetSynciv	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glGetSynciv) (GLsync sync, GLenum pname, GLsizei bufSize, GLsizei* length, GLint* values);$/;"	v
+glGetTransformFeedbackVarying	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glGetTransformFeedbackVarying) (GLuint program, GLuint index, GLsizei bufSize, GLsizei* length, GLsizei* size, GLenum* type, GLchar* name);$/;"	v
+glGetUniformBlockIndex	gl3stub.c	/^GL_APICALL GLuint         (* GL_APIENTRY glGetUniformBlockIndex) (GLuint program, const GLchar* uniformBlockName);$/;"	v
+glGetUniformIndices	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glGetUniformIndices) (GLuint program, GLsizei uniformCount, const GLchar* const* uniformNames, GLuint* uniformIndices);$/;"	v
+glGetUniformuiv	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glGetUniformuiv) (GLuint program, GLint location, GLuint* params);$/;"	v
+glGetVertexAttribIiv	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glGetVertexAttribIiv) (GLuint index, GLenum pname, GLint* params);$/;"	v
+glGetVertexAttribIuiv	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glGetVertexAttribIuiv) (GLuint index, GLenum pname, GLuint* params);$/;"	v
+glInvalidateFramebuffer	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glInvalidateFramebuffer) (GLenum target, GLsizei numAttachments, const GLenum* attachments);$/;"	v
+glInvalidateSubFramebuffer	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glInvalidateSubFramebuffer) (GLenum target, GLsizei numAttachments, const GLenum* attachments, GLint x, GLint y, GLsizei width, GLsizei height);$/;"	v
+glIsQuery	gl3stub.c	/^GL_APICALL GLboolean      (* GL_APIENTRY glIsQuery) (GLuint id);$/;"	v
+glIsSampler	gl3stub.c	/^GL_APICALL GLboolean      (* GL_APIENTRY glIsSampler) (GLuint sampler);$/;"	v
+glIsSync	gl3stub.c	/^GL_APICALL GLboolean      (* GL_APIENTRY glIsSync) (GLsync sync);$/;"	v
+glIsTransformFeedback	gl3stub.c	/^GL_APICALL GLboolean      (* GL_APIENTRY glIsTransformFeedback) (GLuint id);$/;"	v
+glIsVertexArray	gl3stub.c	/^GL_APICALL GLboolean      (* GL_APIENTRY glIsVertexArray) (GLuint array);$/;"	v
+glMapBufferRange	gl3stub.c	/^GL_APICALL GLvoid*        (* GL_APIENTRY glMapBufferRange) (GLenum target, GLintptr offset, GLsizeiptr length, GLbitfield access);$/;"	v
+glPauseTransformFeedback	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glPauseTransformFeedback) (void);$/;"	v
+glProgramBinary	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glProgramBinary) (GLuint program, GLenum binaryFormat, const GLvoid* binary, GLsizei length);$/;"	v
+glProgramParameteri	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glProgramParameteri) (GLuint program, GLenum pname, GLint value);$/;"	v
+glReadBuffer	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glReadBuffer) (GLenum mode);$/;"	v
+glRenderbufferStorageMultisample	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glRenderbufferStorageMultisample) (GLenum target, GLsizei samples, GLenum internalformat, GLsizei width, GLsizei height);$/;"	v
+glResumeTransformFeedback	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glResumeTransformFeedback) (void);$/;"	v
+glSamplerParameterf	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glSamplerParameterf) (GLuint sampler, GLenum pname, GLfloat param);$/;"	v
+glSamplerParameterfv	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glSamplerParameterfv) (GLuint sampler, GLenum pname, const GLfloat* param);$/;"	v
+glSamplerParameteri	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glSamplerParameteri) (GLuint sampler, GLenum pname, GLint param);$/;"	v
+glSamplerParameteriv	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glSamplerParameteriv) (GLuint sampler, GLenum pname, const GLint* param);$/;"	v
+glTexImage3D	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glTexImage3D) (GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLsizei depth, GLint border, GLenum format, GLenum type, const GLvoid* pixels);$/;"	v
+glTexStorage2D	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glTexStorage2D) (GLenum target, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height);$/;"	v
+glTexStorage3D	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glTexStorage3D) (GLenum target, GLsizei levels, GLenum internalformat, GLsizei width, GLsizei height, GLsizei depth);$/;"	v
+glTexSubImage3D	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glTexSubImage3D) (GLenum target, GLint level, GLint xoffset, GLint yoffset, GLint zoffset, GLsizei width, GLsizei height, GLsizei depth, GLenum format, GLenum type, const GLvoid* pixels);$/;"	v
+glTransformFeedbackVaryings	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glTransformFeedbackVaryings) (GLuint program, GLsizei count, const GLchar* const* varyings, GLenum bufferMode);$/;"	v
+glUniform1ui	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glUniform1ui) (GLint location, GLuint v0);$/;"	v
+glUniform1uiv	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glUniform1uiv) (GLint location, GLsizei count, const GLuint* value);$/;"	v
+glUniform2ui	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glUniform2ui) (GLint location, GLuint v0, GLuint v1);$/;"	v
+glUniform2uiv	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glUniform2uiv) (GLint location, GLsizei count, const GLuint* value);$/;"	v
+glUniform3ui	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glUniform3ui) (GLint location, GLuint v0, GLuint v1, GLuint v2);$/;"	v
+glUniform3uiv	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glUniform3uiv) (GLint location, GLsizei count, const GLuint* value);$/;"	v
+glUniform4ui	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glUniform4ui) (GLint location, GLuint v0, GLuint v1, GLuint v2, GLuint v3);$/;"	v
+glUniform4uiv	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glUniform4uiv) (GLint location, GLsizei count, const GLuint* value);$/;"	v
+glUniformBlockBinding	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glUniformBlockBinding) (GLuint program, GLuint uniformBlockIndex, GLuint uniformBlockBinding);$/;"	v
+glUniformMatrix2x3fv	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glUniformMatrix2x3fv) (GLint location, GLsizei count, GLboolean transpose, const GLfloat* value);$/;"	v
+glUniformMatrix2x4fv	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glUniformMatrix2x4fv) (GLint location, GLsizei count, GLboolean transpose, const GLfloat* value);$/;"	v
+glUniformMatrix3x2fv	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glUniformMatrix3x2fv) (GLint location, GLsizei count, GLboolean transpose, const GLfloat* value);$/;"	v
+glUniformMatrix3x4fv	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glUniformMatrix3x4fv) (GLint location, GLsizei count, GLboolean transpose, const GLfloat* value);$/;"	v
+glUniformMatrix4x2fv	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glUniformMatrix4x2fv) (GLint location, GLsizei count, GLboolean transpose, const GLfloat* value);$/;"	v
+glUniformMatrix4x3fv	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glUniformMatrix4x3fv) (GLint location, GLsizei count, GLboolean transpose, const GLfloat* value);$/;"	v
+glUnmapBuffer	gl3stub.c	/^GL_APICALL GLboolean      (* GL_APIENTRY glUnmapBuffer) (GLenum target);$/;"	v
+glVertexAttribDivisor	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glVertexAttribDivisor) (GLuint index, GLuint divisor);$/;"	v
+glVertexAttribI4i	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glVertexAttribI4i) (GLuint index, GLint x, GLint y, GLint z, GLint w);$/;"	v
+glVertexAttribI4iv	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glVertexAttribI4iv) (GLuint index, const GLint* v);$/;"	v
+glVertexAttribI4ui	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glVertexAttribI4ui) (GLuint index, GLuint x, GLuint y, GLuint z, GLuint w);$/;"	v
+glVertexAttribI4uiv	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glVertexAttribI4uiv) (GLuint index, const GLuint* v);$/;"	v
+glVertexAttribIPointer	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glVertexAttribIPointer) (GLuint index, GLint size, GLenum type, GLsizei stride, const GLvoid* pointer);$/;"	v
+glWaitSync	gl3stub.c	/^GL_APICALL void           (* GL_APIENTRY glWaitSync) (GLsync sync, GLbitfield flags, GLuint64 timeout);$/;"	v
+init	RendererES2.cpp	/^bool RendererES2::init() {$/;"	f	class:RendererES2
+init	RendererES3.cpp	/^bool RendererES3::init() {$/;"	f	class:RendererES3
+mAngles	gles3jni.h	/^    float mAngles[MAX_INSTANCES];$/;"	m	class:Renderer
+mAngularVelocity	gles3jni.h	/^    float mAngularVelocity[MAX_INSTANCES];$/;"	m	class:Renderer
+mColorAttrib	RendererES2.cpp	/^    GLint mColorAttrib;$/;"	m	class:RendererES2	file:
+mEglContext	RendererES2.cpp	/^    const EGLContext mEglContext;$/;"	m	class:RendererES2	file:
+mEglContext	RendererES3.cpp	/^    const EGLContext mEglContext;$/;"	m	class:RendererES3	file:
+mLastFrameNs	gles3jni.h	/^    uint64_t mLastFrameNs;$/;"	m	class:Renderer
+mNumInstances	gles3jni.h	/^    unsigned int mNumInstances;$/;"	m	class:Renderer
+mOffsetUniform	RendererES2.cpp	/^    GLint mOffsetUniform;$/;"	m	class:RendererES2	file:
+mOffsets	RendererES2.cpp	/^    float mOffsets[2*MAX_INSTANCES];$/;"	m	class:RendererES2	file:
+mPosAttrib	RendererES2.cpp	/^    GLint mPosAttrib;$/;"	m	class:RendererES2	file:
+mProgram	RendererES2.cpp	/^    GLuint mProgram;$/;"	m	class:RendererES2	file:
+mProgram	RendererES3.cpp	/^    GLuint mProgram;$/;"	m	class:RendererES3	file:
+mScale	gles3jni.h	/^    float mScale[2];$/;"	m	class:Renderer
+mScaleRot	RendererES2.cpp	/^    float mScaleRot[4*MAX_INSTANCES];   \/\/ array of 2x2 column-major matrices$/;"	m	class:RendererES2	file:
+mScaleRotUniform	RendererES2.cpp	/^    GLint mScaleRotUniform;$/;"	m	class:RendererES2	file:
+mVB	RendererES2.cpp	/^    GLuint mVB;$/;"	m	class:RendererES2	file:
+mVB	RendererES3.cpp	/^    GLuint mVB[VB_COUNT];$/;"	m	class:RendererES3	file:
+mVBState	RendererES3.cpp	/^    GLuint mVBState;$/;"	m	class:RendererES3	file:
+mapOffsetBuf	RendererES2.cpp	/^float* RendererES2::mapOffsetBuf() {$/;"	f	class:RendererES2
+mapOffsetBuf	RendererES3.cpp	/^float* RendererES3::mapOffsetBuf() {$/;"	f	class:RendererES3
+mapTransformBuf	RendererES2.cpp	/^float* RendererES2::mapTransformBuf() {$/;"	f	class:RendererES2
+mapTransformBuf	RendererES3.cpp	/^float* RendererES3::mapTransformBuf() {$/;"	f	class:RendererES3
+pos	gles3jni.h	/^    GLfloat pos[2];$/;"	m	struct:Vertex
+printGlString	gles3jni.cpp	/^static void printGlString(const char* name, GLenum s) {$/;"	f	file:
+render	gles3jni.cpp	/^void Renderer::render() {$/;"	f	class:Renderer
+resize	gles3jni.cpp	/^void Renderer::resize(int w, int h) {$/;"	f	class:Renderer
+rgba	gles3jni.h	/^    GLubyte rgba[4];$/;"	m	struct:Vertex
+step	gles3jni.cpp	/^void Renderer::step() {$/;"	f	class:Renderer
+unmapOffsetBuf	RendererES2.cpp	/^void RendererES2::unmapOffsetBuf() {$/;"	f	class:RendererES2
+unmapOffsetBuf	RendererES3.cpp	/^void RendererES3::unmapOffsetBuf() {$/;"	f	class:RendererES3
+unmapTransformBuf	RendererES2.cpp	/^void RendererES2::unmapTransformBuf() {$/;"	f	class:RendererES2
+unmapTransformBuf	RendererES3.cpp	/^void RendererES3::unmapTransformBuf() {$/;"	f	class:RendererES3
+~Renderer	gles3jni.cpp	/^Renderer::~Renderer() {$/;"	f	class:Renderer
+~RendererES2	RendererES2.cpp	/^RendererES2::~RendererES2() {$/;"	f	class:RendererES2
+~RendererES3	RendererES3.cpp	/^RendererES3::~RendererES3() {$/;"	f	class:RendererES3
