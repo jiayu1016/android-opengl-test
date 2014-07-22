@@ -14,10 +14,14 @@
  * limitations under the License.
  */
 
+#define GLM_FORCE_RADIANS
 #include "gles3jni.h"
 #include <EGL/egl.h>
 #include <GLES/gl.h>
 #include "glm/glm.hpp"
+#include "glm/gtc/constants.hpp"
+#include "glm/gtc/matrix_transform.hpp"
+#include "glm/gtc/type_ptr.hpp"
 
 #define STR(s) #s
 #define STRV(s) STR(s)
@@ -51,21 +55,20 @@ static const char FRAGMENT_SHADER[] =
 
 static const char vertexShaderCode[] =
     "#version 300 es\n"
-	"layout(location = 0) in vec4 vPosition;\n"
-    "layout(location=" STRV(COLOR_ATTRIB) ") in vec4 color;\n"
+    "layout(location = 0) in vec3 vPosition;\n"
+	"uniform mat4 vMVPMatrix;\n"
     "out vec4 vColor;\n"
-	"void main() {\n" 
-	"  gl_Position = vPosition;\n"
-    "  vColor = color;\n"
-	"}\n";
+    "void main() {\n" 
+    "  gl_Position = vMVPMatrix * vec4(vPosition, 1.0f);\n"
+    "}\n";
 
 static const char fragmentShaderCode[] =
     "#version 300 es\n"
     "precision mediump float;\n"
-	"out vec4 color;\n"
-	"void main() {\n"
-	"  color= vec4(1,1,0,0);\n"
-	"}\n";
+    "out vec4 color;\n"
+    "void main() {\n"
+    "  color= vec4(1,1,0,0);\n"
+    "}\n";
 
 class my_Renderer: public Renderer {
 public:
@@ -84,7 +87,9 @@ private:
 
     const EGLContext mEglContext;
     GLuint mProgram;
-    GLuint vertexbuffer;
+    GLuint mVertexBuffer;
+
+	GLint mMVPMartixLoc;
 };
 
 Renderer* createMyRenderer() {
@@ -102,22 +107,34 @@ my_Renderer::my_Renderer()
 {
 }
 
-// An array of 3 vectors which represents 3 vertices
+// An array of 4 vectors which represents 4 vertices
 static const GLfloat g_vertex_buffer_data[] = {
-    -0.5f, -0.5f, 0.0f,
-    0.5f, -0.5f, 0.0f,
-    0.0f, 0.5f, 0.0f,
+    -0.8f, -0.8f, 0.0f,
+     0.8f, -0.8f, 0.0f,
+    -0.8f,  0.8f, 0.0f,
+     0.8f,  0.8f, 0.0f,
 };
 
 bool my_Renderer::init() {
 	mProgram = createProgram(vertexShaderCode, fragmentShaderCode);
 	if (!mProgram)
 		return false;
-	glGenBuffers(1, &vertexbuffer);
-	glBindBuffer(GL_ARRAY_BUFFER, vertexbuffer);
+
+	glGenBuffers(1, &mVertexBuffer);
+	glBindBuffer(GL_ARRAY_BUFFER, mVertexBuffer);
 	glBufferData(GL_ARRAY_BUFFER, sizeof(g_vertex_buffer_data), g_vertex_buffer_data, GL_STATIC_DRAW); 
 
-	ALOGV("Using OpenGL ES 3.0 renderer");
+	glVertexAttribPointer(
+			POS_ATTRIB,         // attribute 0. No particular reason for 0, but must match the layout in the shader.
+			3,                  // size
+			GL_FLOAT,           // type
+			GL_FALSE,           // normalized?
+			0,                  // stride
+			(void*)0            // array buffer offset
+			);
+	glEnableVertexAttribArray(POS_ATTRIB);
+
+	ALOGV("Using OpenGL ES 3.0 renderer ");
 	return true;
 }
 
@@ -148,22 +165,12 @@ void my_Renderer::unmapTransformBuf() {
 }
 
 void my_Renderer::draw(unsigned int numInstances) {
+	glm::mat4 rotation = glm::rotate(glm::mat4(1.0f), mAngles * (3.1415f / 180.0f), glm::vec3(0.0f, 0.0f, 1.0f));
 	glUseProgram(mProgram);
-	glEnableVertexAttribArray(0);
-	glClearColor(0.0f, 0.0f, 1.0f, 1.0f);
+	mMVPMartixLoc = glGetUniformLocation(mProgram, "vMVPMatrix");
+	glUniformMatrix4fv(mMVPMartixLoc, 1, false, glm::value_ptr(rotation));
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	glBindBuffer(GL_ARRAY_BUFFER, vertexbuffer);
-	glVertexAttribPointer(
-			0,                  // attribute 0. No particular reason for 0, but must match the layout in the shader.
-			3,                  // size
-			GL_FLOAT,           // type
-			GL_FALSE,           // normalized?
-			0,                  // stride
-			(void*)0            // array buffer offset
-			);
-
+	glBindBuffer(GL_ARRAY_BUFFER, mVertexBuffer);
 	// Draw the triangle !
-	glDrawArrays(GL_TRIANGLES, 0, 3); // Starting from vertex 0; 3 vertices total -> 1 triangle
-
-	glDisableVertexAttribArray(0);
+	glDrawArrays(GL_TRIANGLE_STRIP, 0, 4); // Starting from vertex 0; 3 vertices total -> 1 triangle
 }

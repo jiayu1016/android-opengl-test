@@ -76,6 +76,7 @@ public:
     virtual ~Renderer();
     void resize(int w, int h);
     void render();
+    float mAngles;
 
 protected:
     Renderer();
@@ -97,9 +98,7 @@ private:
 
     unsigned int mNumInstances;
     float mScale[2];
-    float mAngularVelocity[MAX_INSTANCES];
     uint64_t mLastFrameNs;
-    float mAngles[MAX_INSTANCES];
 };
 
 extern Renderer* createES2Renderer();
