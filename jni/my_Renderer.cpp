@@ -158,6 +158,8 @@ bool my_Renderer::init() {
 			);
 	glEnableVertexAttribArray(COLOR_ATTRIB);
 
+	glEnable(GL_CULL_FACE);
+	glCullFace(GL_BACK);
 	ALOGV("Using OpenGL ES 3.0 renderer ");
 	return true;
 }
@@ -171,6 +173,7 @@ my_Renderer::~my_Renderer() {
      */
     if (eglGetCurrentContext() != mEglContext)
         return;
+	glDisable(GL_CULL_FACE);
 	glDeleteBuffers(1, &mVertexColor);
 	glDeleteBuffers(1, &mVertexBuffer);
     glDeleteProgram(mProgram);
@@ -191,12 +194,11 @@ void my_Renderer::unmapTransformBuf() {
 }
 
 void my_Renderer::draw(unsigned int numInstances) {
-	glm::mat4 rotation = glm::rotate(glm::mat4(1.0f), mAngles * (3.1415f / 180.0f), glm::vec3(0.0f, 0.0f, 1.0f));
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	glm::mat4 rotation = glm::rotate(glm::mat4(1.0f), mAngles * (3.1415f / 180.0f), glm::vec3(0.0f, 1.0f, 0.0f));
 	glUseProgram(mProgram);
-	glShadeModel(GL_FLAT);
 	mMVPMartixLoc = glGetUniformLocation(mProgram, "vMVPMatrix");
 	glUniformMatrix4fv(mMVPMartixLoc, 1, false, glm::value_ptr(rotation));
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glBindBuffer(GL_ARRAY_BUFFER, mVertexBuffer);
 	// Draw the triangle !
 	glDrawArrays(GL_TRIANGLE_STRIP, 0, 4); // Starting from vertex 0; 3 vertices total -> 1 triangle
