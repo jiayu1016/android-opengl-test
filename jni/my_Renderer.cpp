@@ -56,18 +56,21 @@ static const char FRAGMENT_SHADER[] =
 static const char vertexShaderCode[] =
     "#version 300 es\n"
     "layout(location = 0) in vec3 vPosition;\n"
+    "layout(location = 1) in vec4 color;\n"
 	"uniform mat4 vMVPMatrix;\n"
     "out vec4 vColor;\n"
     "void main() {\n" 
     "  gl_Position = vMVPMatrix * vec4(vPosition, 1.0f);\n"
+	"  vColor = color;\n"
     "}\n";
 
 static const char fragmentShaderCode[] =
     "#version 300 es\n"
     "precision mediump float;\n"
+    "in vec4 vColor;\n"
     "out vec4 color;\n"
     "void main() {\n"
-    "  color= vec4(1,1,0,0);\n"
+    "  color= vColor;\n"
     "}\n";
 
 class my_Renderer: public Renderer {
@@ -88,6 +91,7 @@ private:
     const EGLContext mEglContext;
     GLuint mProgram;
     GLuint mVertexBuffer;
+    GLuint mVertexColor;
 
 	GLint mMVPMartixLoc;
 };
@@ -115,6 +119,14 @@ static const GLfloat g_vertex_buffer_data[] = {
      0.8f,  0.8f, 0.0f,
 };
 
+static const GLfloat g_vertex_color_data[] = {
+    1.0f, 1.0f, 0.0f, 1.0f,
+    1.0f, 0.0f, 0.0f, 1.0f,
+    0.0f, 1.0f, 0.0f, 1.0f,
+    0.0f, 0.0f, 1.0f, 1.0f,
+};
+
+
 bool my_Renderer::init() {
 	mProgram = createProgram(vertexShaderCode, fragmentShaderCode);
 	if (!mProgram)
@@ -123,7 +135,6 @@ bool my_Renderer::init() {
 	glGenBuffers(1, &mVertexBuffer);
 	glBindBuffer(GL_ARRAY_BUFFER, mVertexBuffer);
 	glBufferData(GL_ARRAY_BUFFER, sizeof(g_vertex_buffer_data), g_vertex_buffer_data, GL_STATIC_DRAW); 
-
 	glVertexAttribPointer(
 			POS_ATTRIB,         // attribute 0. No particular reason for 0, but must match the layout in the shader.
 			3,                  // size
@@ -133,6 +144,19 @@ bool my_Renderer::init() {
 			(void*)0            // array buffer offset
 			);
 	glEnableVertexAttribArray(POS_ATTRIB);
+
+	glGenBuffers(1, &mVertexColor);
+	glBindBuffer(GL_ARRAY_BUFFER, mVertexColor);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(g_vertex_color_data), g_vertex_color_data, GL_STATIC_DRAW); 
+	glVertexAttribPointer(
+			COLOR_ATTRIB,       // attribute 1. No particular reason for 0, but must match the layout in the shader.
+			4,                  // size
+			GL_FLOAT,           // type
+			GL_FALSE,           // normalized?
+			0,                  // stride
+			(void*)0            // array buffer offset
+			);
+	glEnableVertexAttribArray(COLOR_ATTRIB);
 
 	ALOGV("Using OpenGL ES 3.0 renderer ");
 	return true;
@@ -147,6 +171,8 @@ my_Renderer::~my_Renderer() {
      */
     if (eglGetCurrentContext() != mEglContext)
         return;
+	glDeleteBuffers(1, &mVertexColor);
+	glDeleteBuffers(1, &mVertexBuffer);
     glDeleteProgram(mProgram);
 }
 
@@ -167,6 +193,7 @@ void my_Renderer::unmapTransformBuf() {
 void my_Renderer::draw(unsigned int numInstances) {
 	glm::mat4 rotation = glm::rotate(glm::mat4(1.0f), mAngles * (3.1415f / 180.0f), glm::vec3(0.0f, 0.0f, 1.0f));
 	glUseProgram(mProgram);
+	glShadeModel(GL_FLAT);
 	mMVPMartixLoc = glGetUniformLocation(mProgram, "vMVPMatrix");
 	glUniformMatrix4fv(mMVPMartixLoc, 1, false, glm::value_ptr(rotation));
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
