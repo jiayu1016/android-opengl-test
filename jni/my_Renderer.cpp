@@ -96,6 +96,9 @@ private:
 	GLint mMVPMartixLoc;
 	glm::mat4 mP;
 	glm::mat4 mV;
+	float width;
+	float height;
+	float ratio;
 };
 
 Renderer* createMyRenderer() {
@@ -115,10 +118,16 @@ my_Renderer::my_Renderer()
 
 // An array of 4 vectors which represents 4 vertices
 static const GLfloat g_vertex_buffer_data[] = {
+	/*
     -0.8f, -0.4f, 0.0f,
      0.8f, -0.4f, 0.0f,
     -0.8f,  0.4f, 0.0f,
      0.8f,  0.4f, 0.0f,
+	 */
+    -0.9f, -0.9f, 0.0f,
+     0.9f, -0.9f, 0.0f,
+    -0.9f,  0.9f, 0.0f,
+     0.9f,  0.9f, 0.0f,
 };
 
 static const GLfloat g_vertex_color_data[] = {
@@ -165,8 +174,13 @@ bool my_Renderer::init() {
 
 	GLint tmp[4];
 	glGetIntegerv(GL_VIEWPORT, tmp);
-	mP = glm::perspective(30.f, (float)tmp[2] / (float)tmp[3], 0.1f, 100.f);
-	mV = glm::lookAt(glm::vec3(0.f, 0.f, 2.f), glm::vec3(0.f, 0.f, 0.f), glm::vec3(0.f, 1.0f, 0.0f));
+	width = tmp[2];
+	height = tmp[3];
+	ratio = height / width;
+	mP = glm::ortho(-1.f, 1.f, -ratio, ratio, -1.0f, 1.0f);
+//	mP = glm::ortho((float)(-width) / 2.0f, (float)width / 2.0f, (float)(-height) / 2.0f, (float)height / 2.0f);
+//	mP = glm::perspective(30.f, (float)tmp[2] / (float)tmp[3], 0.1f, 100.f);
+	mV = glm::lookAt(glm::vec3(0.f, 0.0f, 1.f), glm::vec3(0.f, 0.f, 0.f), glm::vec3(0.f, 1.0f, 0.0f));
 	ALOGV("Using OpenGL ES 3.0 renderer ");
 	return true;
 }
@@ -202,10 +216,13 @@ void my_Renderer::unmapTransformBuf() {
 
 void my_Renderer::draw(unsigned int numInstances) {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	glm::mat4 rotation = mP * mV * glm::rotate(glm::mat4(1.0f), mAngles * (3.1415f / 180.0f), glm::vec3(0.0f, 0.0f, 1.0f)) ;
+	glm::mat4 rotation = glm::rotate(glm::mat4(1.0f), mAngles * (3.1415f / 180.0f), glm::vec3(0.0f, 0.0f, 1.0f)) ;
+	glm::mat4 scale = glm::scale(glm::mat4(1.0f), glm::vec3(1.f/ratio, 1.0f, 1.f));
+	glm::mat4 mM = rotation * scale;
+	glm::mat4 MVP = mP * mV * mM;
 	glUseProgram(mProgram);
 	mMVPMartixLoc = glGetUniformLocation(mProgram, "vMVPMatrix");
-	glUniformMatrix4fv(mMVPMartixLoc, 1, false, glm::value_ptr(rotation));
+	glUniformMatrix4fv(mMVPMartixLoc, 1, false, glm::value_ptr(MVP));
 	glBindBuffer(GL_ARRAY_BUFFER, mVertexBuffer);
 	// Draw the triangle !
 	glDrawArrays(GL_TRIANGLE_STRIP, 0, 4); // Starting from vertex 0; 3 vertices total -> 1 triangle
