@@ -23,54 +23,39 @@
 #include "glm/gtc/matrix_transform.hpp"
 #include "glm/gtc/type_ptr.hpp"
 
+extern "C" {
+#include <time.h>
+#include <unistd.h>
+#include "image.h"
+}
+
 #define STR(s) #s
 #define STRV(s) STR(s)
 
 #define POS_ATTRIB 0
-#define COLOR_ATTRIB 1
+#define TEX_ATTRIB 1
 #define SCALEROT_ATTRIB 2
 #define OFFSET_ATTRIB 3
-
-static const char VERTEX_SHADER[] =
-    "#version 300 es\n"
-    "layout(location = " STRV(POS_ATTRIB) ") in vec2 pos;\n"
-    "layout(location=" STRV(COLOR_ATTRIB) ") in vec4 color;\n"
-    "layout(location=" STRV(SCALEROT_ATTRIB) ") in vec4 scaleRot;\n"
-    "layout(location=" STRV(OFFSET_ATTRIB) ") in vec2 offset;\n"
-    "out vec4 vColor;\n"
-    "void main() {\n"
-    "    mat2 sr = mat2(scaleRot.xy, scaleRot.zw);\n"
-    "    gl_Position = vec4(sr*pos + offset, 0.0, 1.0);\n"
-    "    vColor = color;\n"
-    "}\n";
-
-static const char FRAGMENT_SHADER[] =
-    "#version 300 es\n"
-    "precision mediump float;\n"
-    "in vec4 vColor;\n"
-    "out vec4 outColor;\n"
-    "void main() {\n"
-    "    outColor = vColor;\n"
-    "}\n";
 
 static const char vertexShaderCode[] =
     "#version 300 es\n"
     "layout(location = 0) in vec3 vPosition;\n"
-    "layout(location = 1) in vec4 color;\n"
-	"uniform mat4 vMVPMatrix;\n"
-    "out vec4 vColor;\n"
+    "layout(location = 1) in vec2 vTexPos;\n"
+    "uniform mat4 vMVPMatrix;\n"
+    "out vec2 fTexPos;\n"
     "void main() {\n" 
     "  gl_Position = vMVPMatrix * vec4(vPosition, 1.0f);\n"
-	"  vColor = color;\n"
+    "  fTexPos = vTexPos;\n"
     "}\n";
 
 static const char fragmentShaderCode[] =
     "#version 300 es\n"
     "precision mediump float;\n"
-    "in vec4 vColor;\n"
+    "uniform sampler2D u_TextureUnit;\n"
+    "in vec2 fTexPos;\n"
     "out vec4 color;\n"
     "void main() {\n"
-    "  color= vColor;\n"
+    "  color = texture(u_TextureUnit, fTexPos);\n"
     "}\n";
 
 class my_Renderer: public Renderer {
@@ -91,7 +76,10 @@ private:
     const EGLContext mEglContext;
     GLuint mProgram;
     GLuint mVertexBuffer;
-    GLuint mVertexColor;
+
+    GLuint mVertexTex;
+	GLuint mTexture0;
+	GLuint mTextUnitLoc0;
 
 	GLint mMVPMartixLoc;
 	glm::mat4 mP;
@@ -130,6 +118,13 @@ static const GLfloat g_vertex_buffer_data[] = {
      0.9f,  0.9f, 0.0f,
 };
 
+static const GLfloat g_vertex_texture_coordinate[] = {
+	0.0f, 1.0f,     // 0 bottom left
+	1.0f, 1.0f,     // 1 bottom right
+	0.0f, 0.0f,     // 2 top left
+	1.0f, 0.0f      // 3 top right
+};
+
 static const GLfloat g_vertex_color_data[] = {
     1.0f, 1.0f, 0.0f, 1.0f,
     1.0f, 0.0f, 0.0f, 1.0f,
@@ -137,11 +132,19 @@ static const GLfloat g_vertex_color_data[] = {
     0.0f, 0.0f, 1.0f, 1.0f,
 };
 
+long current_time_msec(void)
+{
+    struct timespec now;
+    clock_gettime(CLOCK_MONOTONIC, &now);
+    return now.tv_sec*1000L + now.tv_nsec/1000000L;
+}
 
 bool my_Renderer::init() {
 	mProgram = createProgram(vertexShaderCode, fragmentShaderCode);
 	if (!mProgram)
 		return false;
+
+	glUseProgram(mProgram);
 
 	glGenBuffers(1, &mVertexBuffer);
 	glBindBuffer(GL_ARRAY_BUFFER, mVertexBuffer);
@@ -156,18 +159,20 @@ bool my_Renderer::init() {
 			);
 	glEnableVertexAttribArray(POS_ATTRIB);
 
-	glGenBuffers(1, &mVertexColor);
-	glBindBuffer(GL_ARRAY_BUFFER, mVertexColor);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(g_vertex_color_data), g_vertex_color_data, GL_STATIC_DRAW); 
+	mTexture0 = load_texture_from_png_file("/storage/sdcard0/Pictures/zj.png");
+	mTextUnitLoc0 = glGetUniformLocation(mProgram, "u_TextureUnit");
+	glGenBuffers(1, &mVertexTex);
+	glBindBuffer(GL_ARRAY_BUFFER, mVertexTex);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(g_vertex_texture_coordinate), g_vertex_texture_coordinate, GL_STATIC_DRAW); 
 	glVertexAttribPointer(
-			COLOR_ATTRIB,       // attribute 1. No particular reason for 0, but must match the layout in the shader.
-			4,                  // size
+			TEX_ATTRIB,         // attribute 0. No particular reason for 0, but must match the layout in the shader.
+			2,                  // size
 			GL_FLOAT,           // type
 			GL_FALSE,           // normalized?
 			0,                  // stride
 			(void*)0            // array buffer offset
 			);
-	glEnableVertexAttribArray(COLOR_ATTRIB);
+	glEnableVertexAttribArray(TEX_ATTRIB);
 
 	glEnable(GL_CULL_FACE);
 	glCullFace(GL_BACK);
@@ -181,6 +186,7 @@ bool my_Renderer::init() {
 //	mP = glm::ortho((float)(-width) / 2.0f, (float)width / 2.0f, (float)(-height) / 2.0f, (float)height / 2.0f);
 //	mP = glm::perspective(30.f, (float)tmp[2] / (float)tmp[3], 0.1f, 100.f);
 	mV = glm::lookAt(glm::vec3(0.f, 0.0f, 1.f), glm::vec3(0.f, 0.f, 0.f), glm::vec3(0.f, 1.0f, 0.0f));
+
 	ALOGV("Using OpenGL ES 3.0 renderer ");
 	return true;
 }
@@ -194,9 +200,9 @@ my_Renderer::~my_Renderer() {
      */
     if (eglGetCurrentContext() != mEglContext)
         return;
-	glDisable(GL_CULL_FACE);
-	glDeleteBuffers(1, &mVertexColor);
-	glDeleteBuffers(1, &mVertexBuffer);
+    glDisable(GL_CULL_FACE);
+    glDeleteBuffers(1, &mVertexTex);
+    glDeleteBuffers(1, &mVertexBuffer);
     glDeleteProgram(mProgram);
 }
 
@@ -215,6 +221,7 @@ void my_Renderer::unmapTransformBuf() {
 }
 
 void my_Renderer::draw(unsigned int numInstances) {
+	long before = current_time_msec();
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glm::mat4 rotation = glm::rotate(glm::mat4(1.0f), mAngles * (3.1415f / 180.0f), glm::vec3(0.0f, 0.0f, 1.0f)) ;
 	glm::mat4 scale = glm::scale(glm::mat4(1.0f), glm::vec3(1.f/ratio, 1.0f, 1.f));
@@ -224,6 +231,12 @@ void my_Renderer::draw(unsigned int numInstances) {
 	mMVPMartixLoc = glGetUniformLocation(mProgram, "vMVPMatrix");
 	glUniformMatrix4fv(mMVPMartixLoc, 1, false, glm::value_ptr(MVP));
 	glBindBuffer(GL_ARRAY_BUFFER, mVertexBuffer);
+
+	glActiveTexture(GL_TEXTURE0);
+	glBindTexture(GL_TEXTURE_2D, mTexture0);
+	glUniform1i(mTextUnitLoc0, 0);
 	// Draw the triangle !
 	glDrawArrays(GL_TRIANGLE_STRIP, 0, 4); // Starting from vertex 0; 3 vertices total -> 1 triangle
+	long after = current_time_msec();
+	ALOGE("lskakaxi, draw cost %ld ms!", after - before);
 }

@@ -18,8 +18,15 @@
 #include <stdlib.h>
 #include <time.h>
 #include <GLES/gl.h>
+#include <fcntl.h>
+#include <sys/mman.h>
+#include <sys/stat.h>
+#include <errno.h>
 
 #include "gles3jni.h"
+extern "C" {
+#include "image.h"
+}
 
 const Vertex QUAD[4] = {
     // Square with diagonal < 2 so that it fits in a [-1 .. 1]^2 square
@@ -37,6 +44,40 @@ bool checkGlError(const char* funcName) {
         return true;
     }
     return false;
+}
+
+GLuint load_texture(const GLsizei width, const GLsizei height,
+		const GLenum type, const GLvoid *pixels) {
+	GLuint texture_id;
+	glGenTextures(1, &texture_id);
+	glBindTexture(GL_TEXTURE_2D, texture_id);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+	glTexImage2D(GL_TEXTURE_2D, 0, type, width, height, 0, type, GL_UNSIGNED_BYTE, pixels);
+	glGenerateMipmap(GL_TEXTURE_2D);
+	glBindTexture(GL_TEXTURE_2D, 0);
+	return texture_id;
+}
+
+GLuint load_texture_from_png_file(const char *path) {
+	struct stat sb;
+	int fd = open(path, O_RDONLY);
+	void *png_context;
+
+	ALOGE("lskakaxi, file [%s] fd [%d] file size [%lld], errno[%d][%s]", path, fd, sb.st_size, errno, strerror(errno));
+	fstat(fd, &sb);
+	png_context = mmap(NULL, sb.st_size, PROT_READ, MAP_PRIVATE, fd, 0);
+	ALOGE("lskakaxi, mmap [%p]", png_context);
+
+	const RawImageData raw_image_data = get_raw_image_data_from_png(png_context, sb.st_size);
+	const GLuint texture_id = load_texture(
+		raw_image_data.width, raw_image_data.height, raw_image_data.gl_color_format, raw_image_data.data);
+
+	release_raw_image_data(&raw_image_data);
+	munmap(png_context, sb.st_size);
+	close(fd);
+
+	return texture_id;
 }
 
 GLuint createShader(GLenum shaderType, const char* src) {
